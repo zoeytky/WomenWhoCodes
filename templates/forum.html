@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/forum.css') }}">
+    <title>Simple Forum</title>
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+<section>
+    <h2>Let's ask questions for other platform members!</h2>
+    <p>Discussion post for WomenWhoCodes:</p>
+    <form id="replyForm" action="/submit_reply" method="post">
+        <label for="reply">Add a Reply:</label>
+        <textarea id="reply" name="reply" required></textarea>
+        <input type="submit" value="Submit Reply">
+    </form>
+    <!-- Add a <div> to display the user's input -->
+    <div id="displayReply"></div>
+</section>
+<footer>
+
+</footer>
+</body>
+<script>
+    // Get a reference to the form and the display area
+    const replyForm = document.getElementById("replyForm");
+    const displayReply = document.getElementById("displayReply");
+
+    // Add a submit event listener to the form
+    replyForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Get the user's input from the textarea
+        const replyInput = document.getElementById("reply");
+        const userReply = replyInput.value;
+
+        // Create a new <p> element to display the user's input
+        const newParagraph = document.createElement("p");
+        newParagraph.textContent = userReply;
+
+        // Append the <p> element to the display area
+        displayReply.appendChild(newParagraph);
+
+        // Clear the textarea
+        replyInput.value = "";
+    });
+</script>
+{% endblock %}
+</html>

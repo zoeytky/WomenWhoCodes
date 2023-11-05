@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <meta charset="utf-8">
+    <title>About Women who codes</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <h1> Welcome to Women Who Codes</h1>
+    <p> Women Who Codes aims to create a platform for women learning Computer Science. </p>
+    <p> In this platform, women can find all kinds of resources to learn various program languages.</p>
+    <p> We also provide women with a discussion forum for better communication across the world.</p>
+    <img src="{{ url_for('static', filename='image/logo.png') }}" alt="Our LOGO" width="300" height="200">
+
+    {% endblock %}
+  </body>
+</html>
+
+

@@ -1,0 +1,64 @@
+/* Reset default margin and padding for all elements */
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+  background-color: #f0f0f0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+/* Style the header section */
+header {
+  background-color: #800000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style the logo and navigation */
+.logo {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* Style the boxes for the navigation links */
+.menu li {
+  border: 0.5px solid maroon;
+  display: inline;
+  margin-right: 30px;
+  background-color: #fff;
+  padding: 200px 100px;
+  border-radius: 20px;
+  margin-top: 20px;
+  position: relative;
+  width: 550px;
+  height: 150px;
+  top: 300px;
+  left: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #800000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}

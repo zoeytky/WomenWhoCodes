@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/internship.css') }}">
+</head>
+<body>
+{% extends "template.html" %}
+    {% block content %}
+<section>
+    <h2>Internship</h2>
+    <ol>
+        <li>
+            <a href=https://buildyourfuture.withgoogle.com/programs/step/>Google STEP Intern</a>
+        </li>
+        <li>
+            <a href="https://research.adobe.com/adobe-india-women-in-technology-scholarship/">Adobe She Codes</a>
+        </li>
+        <li>
+            <a href="https://www.shecodesindeed.com/">She Codes Indeed</a>
+        </li>
+    </ol>
+</section>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/opportunity.css') }}">
+</head>
+<body>
+{% extends "template.html" %}
+    {% block content %}
+<section>
+    <h2>Your opportunities!</h2>
+    <ol>
+        <li>
+            <a href='https://www.cmu.edu/scs/women-scs/resources/conferences.html'>Undergraduate CS Research for Women</a>
+        </li>
+        <li>
+            <a href="https://www.cmu.edu/scs/women-scs/resources/papers.html">Women and Computer Science Papers</a>
+        </li>
+        <li>
+            <a href="https://cs.stanford.edu/people/eroberts/cs181/projects/2000-01/women-in-cs/solutions.html">Program for women learning CS</a>
+        </li>
+    </ol>
+</section>
+{% endblock %}
+</body>
+</html>

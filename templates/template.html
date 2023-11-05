@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+     <title>Women Who Codes</title>
+   <meta charset="utf-8">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+ </head>
+ <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Women Who Codes</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('forum') }}">Forum</a></li>
+            <li><a href="{{ url_for('resource') }}">Resource</a></li>
+          </ul>
+        </nav></strong>
+    </header>
+    {% block content %}
+    {% endblock %}
+ </body>
+</html>

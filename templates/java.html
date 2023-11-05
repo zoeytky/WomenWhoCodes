@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/java.css') }}">
+</head>
+<body>
+{% extends "template.html" %}
+    {% block content %}
+<section>
+    <h2>Java</h2>
+    <ol>
+        <li>
+            <a href="https://www.geeksforgeeks.org/java-tutorial/">Java Tutorial</a>
+        </li>
+        <li>
+            <a href="https://www.w3schools.com/java/java_intro.asp">Java Introduction</a>
+        </li>
+    </ol>
+</section>
+{% endblock %}
+</body>
+</html>
